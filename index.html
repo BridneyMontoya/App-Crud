@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App-Crud</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>App-Crud</h1>
+    
+    <form id="crud-form">
+        <label for="nombre">Nombre del Proyecto:</label>
+        <input type="text" id="nombre" >
+        
+        <label for="carrera">Carrera:</label>
+        <input type="text" id="carrera" >
+        
+        <label for="nivel">Año:</label>
+        <input type="number" id="nivel" >
+        
+        <label for="participantes">Total de Participantes:</label>
+        <input type="number" id="participantes" >
+        
+        <input type="submit" id="agregar"></input>
+    </form>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre del Proyecto</th>
+                <th>Carrera</th>
+                <th>Año</th>
+                <th>Total de Participantes</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="crud-list">
+            <!-- Aquí se mostrarán los datos ingresados -->
+        </tbody>
+    </table>
+    
+    <script src="scripts.js"></script>
+    <script type="module" src="./app.js"></script>
+    <script type="module" src="./firebase.js"></script>
+</body>
+</html>
